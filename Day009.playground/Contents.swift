@@ -3,6 +3,11 @@ import Cocoa
 let names = ["Arya", "Rob", "John", "Sansa", "Eddard"]
 
 let sortedNames = names.sorted { (name1, name2) -> Bool in
+    if name1 == "John"{
+        return true
+    }else if name2 == "John"{
+        return false
+    }
     return name1.count > name2.count
 }
 
